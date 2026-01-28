@@ -47,6 +47,13 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
-(package! typst-ts-mode :recipe (:host nil :repo "https://git.sr.ht/~meow_king/typst-ts-mode"))
+(package! typst-ts-mode
+  :recipe (:host codeberg
+           :repo "meow_king/typst-ts-mode"
+           :branch "main")
+  :pin "7c2ef0d5bd")
 (package! just-mode)
 (package! yuck-mode)
+(package! simpc-mode
+  :recipe (:host github :repo "rexim/simpc-mode")
+  :pin "b4e851e")
