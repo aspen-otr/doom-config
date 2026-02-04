@@ -57,3 +57,8 @@
 (package! simpc-mode
   :recipe (:host github :repo "rexim/simpc-mode")
   :pin "b4e851e")
+
+(package! simple-mpc
+  :recipe (:host github
+           :repo "jorenvo/simple-mpc")
+  :pin "35923ca")
